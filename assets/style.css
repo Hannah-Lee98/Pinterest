@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    list-style-type: none;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", arial, sans-serif;
+    color: #211922;
+    font-size: 12px;
+
+}
+
+header {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px #e2e2e2 solid;
+
+}
+
+.logo {
+    background: url("images/pinterest.png") no-repeat center center;
+    padding: 20px 20px;
+    margin: 0 15px;
+
+}
+
+.logo:hover {
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+
+.searching {
+    background: url("images/search.png") no-repeat 9px center;
+    outline-width: thick;
+    width: 700px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-right: 10px;
+
+}
+
+.searching::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 50px;
+}
+
+ul {
+    display: flex;
+    padding-left: 0;
+}
+
+li {
+    padding: 14px 14px;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+
+}
+
+.notification {
+    background: url("images/notification.png") no-repeat center center;
+    height: 24px;
+    width: 24px;
+
+}
+.Home>img, .discovering>img{
+  display: none;
+}
+.Message {
+    background: url("images/message.png") no-repeat center center;
+    height: 24px;
+    width: 24px;
+
+}
+
+.new-account {
+    background: url("images/more.png") no-repeat center center;
+    height: 24px;
+    width: 24px;
+}
+
+.Message, .new-account, .notification {
+    padding: 10px;
+}
+
+.Message:hover, .notification:hover, .new-account:hover {
+    background-color: #f2f2f2;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mother, .small-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-size: contain;
+    flex-wrap: wrap;
+
+}
+
+.child {
+    width: 18%;
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    height: auto;;
+}
+
+.list:hover {
+    cursor: zoom-in;
+}
+
+.list > img,.one>img {
+    width: 94%;
+    height: auto;
+    transition: all 0.5s ease;
+    padding: 7px 7px;
+    border-radius: 14px;
+
+}
+
+.con-img:hover .shadow{
+  display: block;
+}
+.list {
+    position: relative;
+}
+
+.small-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    margin: 0 14px 0 14px;
+    width: 89%;
+
+}
+
+.list:hover {
+    background-color: #f2f2f2;
+    border-radius: 7px;
+  transition: 0.5s ease;
+}
+
+.list:hover .small-menu, .list:hover .detail-img {
+    display: table;
+}
+
+.choose:hover, .save:hover {
+    cursor: pointer;
+}
+
+.choose, .save {
+    background-color: #b90000;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    height: 50px;
+}
+
+.choose:hover {
+    background-color: #dfdfdf;
+}
+
+.choose:active {
+    background-color: #b8b8b8;
+    outline: dodgerblue;
+}
+
+.choose {
+    border-radius: 7px 0 0 7px;
+    width: 70%;
+    background: url("images/arrow.png") no-repeat 95% center;
+    background-color: #f2f2f2;
+
+}
+
+.save {
+    width: 30%;
+    color: white;
+    border-radius: 0 7px 7px 0;
+    outline: none;
+}
+
+.save:hover {
+    background-color: #a50000;
+}
+
+.save:active {
+    background-color: darkred;
+}
+
+.address {
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+    outline: none;
+    background-color: #f2f2f2;
+
+}
+
+.cursor {
+    width: 16px;
+    height: 16px;
+}
+
+.address > p {
+    background-size: contain;
+    padding: 0 0 25px 25px;
+}
+
+.address:hover {
+    cursor: pointer;
+}
+
+.more-detail {
+    width: 24px !important;;
+    height: 24px;
+    margin-left: 80%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    padding: 7px 7px;
+}
+
+.detail-img {
+    display: none;
+    position: absolute;
+    bottom: 65px;
+    left: 13px;
+}
+
+.more-detail:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+.add-pin,.question{
+  width:50px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: #8e8e8e 50%;
+}
+.question{
+  bottom: 10px;
+  background: url("images/question-mark.png") no-repeat center center;
+   background-color: #ffff;
+}
+.add-pin{
+  bottom: 70px;
+   background: url("images/add.png") no-repeat center center;
+   background-color: #ffff;
+}
